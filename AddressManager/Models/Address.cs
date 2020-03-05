@@ -23,13 +23,14 @@ namespace AddressManager.Models
 
         public Address() { }
 
-        public Address(string firstname, string lastname, string street, string city)
+        public Address(string firstname, string lastname, string street, string city, string zip)
         {
             Firstname = firstname;
             Lastname = lastname;
             Street = street;
             City = city;
-            /* ToDo: Zip / PLZ setzen */ 
+            /* add: Zip / PLZ setzen */
+            Zip = zip;
         }
 
         #endregion
@@ -42,7 +43,8 @@ namespace AddressManager.Models
 
         public string Street { get; set; }
 
-        /* ToDo: Zip / Plz Property hinzufügen */
+        /* add: Zip / Plz Property hinzufügen */
+        public string Zip { get; set; }
 
         public string City { get; set; }
 
