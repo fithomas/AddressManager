@@ -58,7 +58,8 @@
                     <GridViewColumn Header="Firstname" DisplayMemberBinding="{ Binding Firstname}" Width="150px"></GridViewColumn>
                     <GridViewColumn Header="Lastname" DisplayMemberBinding="{ Binding Lastname}" Width="150px"></GridViewColumn>
                     <GridViewColumn Header="Street" DisplayMemberBinding="{ Binding Street}" Width="253px"></GridViewColumn>
-                    <!-- ToDo: ZIP / PLZ darstellen -->
+                    <!-- Add: ZIP / PLZ darstellen -->
+                    <GridViewColumn Header="Zip" DisplayMemberBinding="{ Binding Zip}" Width="150px"></GridViewColumn>
                     <GridViewColumn Header="City" DisplayMemberBinding="{ Binding City}" Width="150px"></GridViewColumn>
                 </GridView>
             </ListView.View>
@@ -72,10 +73,12 @@
         
         <TextBlock Text="Street:" Grid.Row="8" Grid.Column="1"  VerticalAlignment="Center"></TextBlock>
         <TextBox Name="Street_TextBox" TextChanged="Address_Text_Changed" Grid.Row="8" Grid.Column="2" Grid.ColumnSpan="3" VerticalContentAlignment="Center" Margin="5px"></TextBox>
-        
-        
-        <TextBlock Text="ToDo: ZIP TextBox hinzufügen" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="2" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center"></TextBlock>
-        
+
+
+        <!--         <TextBlock Text="Add: ZIP TextBox hinzufügen" FontWeight="Bold" FontStyle="Italic" Grid.ColumnSpan="2" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center"></TextBlock> -->
+        <TextBlock Text="Zip:" Grid.Row="9" Grid.Column="1" VerticalAlignment="Center"></TextBlock>
+        <TextBox Name="Zip_TextBox" TextChanged="Address_Text_Changed" Grid.Row="9" Grid.Column="2" VerticalContentAlignment="Center" Margin="5px"></TextBox>
+
         <TextBlock HorizontalAlignment="Center" Text="City:" Grid.Row="9" Grid.Column="3" VerticalAlignment="Center"></TextBlock>
         <TextBox Name="City_TextBox" TextChanged="Address_Text_Changed" Grid.Row="9" Grid.Column="4" VerticalContentAlignment="Center" Margin="5px"></TextBox>
 

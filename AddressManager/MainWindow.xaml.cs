@@ -12,7 +12,7 @@
 
 // </copyright>
 
-
+// 05. März 2020 fit: LB Solution
 //-----------------------------------------------------------------------
 
 
@@ -42,11 +42,12 @@ namespace AddressManager
 
             List<string> filterItemList = new List<string>()
             {
-                "firstname",
-                "lastname",
-                "street",
-                /* ToDo: Filter nach ZIP / PLZ */
-                "city"
+                "Firstname",
+                "Lastname",
+                "Street",
+                "City",
+                /* Add: Filter nach ZIP / PLZ */
+                "Zip"
             };
 
             Filter_ComboBox.ItemsSource = filterItemList;
@@ -67,7 +68,10 @@ namespace AddressManager
 
         private void Add_Address_Button_Click(object sender, RoutedEventArgs e)
         {
-            /* ToDo: Erstelle ein neues Address Objekt und füge es zur _addressList hinzu */
+            /* Add: Erstelle ein neues Address Objekt und füge es zur _addressList hinzu */
+            var _address = new Address(Firstname_TextBox.Text, Lastname_TextBox.Text, Street_TextBox.Text, City_TextBox.Text, Zip_TextBox.Text);
+            _addressList.Add(_address);
+
             Address_ListView.ItemsSource = _addressList;
             ClearForm();
         }
@@ -88,10 +92,14 @@ namespace AddressManager
                 case "Street":
                     _filteredList = new BindingList<Address>(_addressList.Where(a => a.Street.Contains(searchTerm)).ToList());
                     break;
-                /* ToDo: Filter für ZIP / PLZ hinzufügen*/
                 case "City":
                     _filteredList = new BindingList<Address>(_addressList.Where(a => a.City.Contains(searchTerm)).ToList());
                     break;
+                /* Add: Filter für ZIP / PLZ hinzufügen*/
+                case "Zip":
+                    _filteredList = new BindingList<Address>(_addressList.Where(a => a.Zip.Contains(searchTerm)).ToList());
+                    break;
+
                 default:
                     MessageBox.Show("Der Filterwert '"  + filter + "' wurde nicht gefunden. Tipp: Case Sensitive");
                     break;
@@ -163,8 +171,9 @@ namespace AddressManager
             Firstname_TextBox.Text = "";
             Lastname_TextBox.Text = "";
             Street_TextBox.Text = "";
-            /* ToDo: Zip / Plz TextBox leeren */
+            /* Add: Zip / Plz TextBox leeren */
             City_TextBox.Text = "";
+            Zip_TextBox.Text = "";
         }
 
         private void Search_TextBox_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)

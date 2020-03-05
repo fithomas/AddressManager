@@ -62,3 +62,10 @@ I:\MA\02_Kurse\318\60_LB\Aufgaben\00_LBabzugeben\00_AddressManager\AddressManage
 I:\MA\02_Kurse\318\60_LB\Aufgaben\00_LBabzugeben\00_AddressManager\AddressManager\AddressManager\obj\Debug\AddressManager_MarkupCompile.lref
 I:\MA\02_Kurse\318\60_LB\Aufgaben\00_LBabzugeben\00_AddressManager\AddressManager\AddressManager\obj\Debug\AddressManager.exe
 I:\MA\02_Kurse\318\60_LB\Aufgaben\00_LBabzugeben\00_AddressManager\AddressManager\AddressManager\obj\Debug\AddressManager.pdb
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\AddressManager.csprojAssemblyReference.cache
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\MainWindow.g.cs
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\App.g.cs
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\AddressManager_MarkupCompile.cache
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\AddressManager_MarkupCompile.lref
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\AddressManager.exe
+C:\Users\fischeth\source\repos\fithomas\AddressManager\AddressManager\obj\Debug\AddressManager.pdb
